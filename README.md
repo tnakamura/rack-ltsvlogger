@@ -1,24 +1,41 @@
-# Rack::Ltsvlogger
+# Rack::LTSVLogger
 
-TODO: Write a gem description
+LTSV logger middleware for Rack application.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'rack-ltsvlogger'
+```ruby
+gem 'rack-ltsvlogger', require: "rack/ltsvlogger"
+```
 
 And then execute:
 
-    $ bundle
+```
+$ bundle
+```
 
 Or install it yourself as:
 
-    $ gem install rack-ltsvlogger
+```
+$ gem install rack-ltsvlogger
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require "rack/ltsvlogger"
+
+class SampleApp
+  def call(env)
+    [200, {"Content-Type" => "text/html"}, ["Hello"]]
+  end
+end
+
+use Rack::LTSVLogger
+run SampleApp.new
+```
 
 ## Contributing
 
