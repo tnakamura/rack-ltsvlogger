@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Rack::LTSVLogger::VERSION
   spec.authors       = ["tnakamura"]
   spec.email         = ["griefworker@gmail.com"]
-  spec.description   = %q{LTSV logger for Rack}
-  spec.summary       = %q{LTSV logger for Rack}
+  spec.description   = %q{LTSV logger for Rack applications implemented as middleware}
+  spec.summary       = %q{LTSV logger for Rack applications implemented as middleware}
   spec.homepage      = "https://github.com/tnakamura/rack-ltsvlogger"
   spec.license       = "MIT"
 

@@ -1,6 +1,6 @@
 # Rack::LTSVLogger
 
-LTSV logger middleware for Rack application.
+LTSV logger for Rack applications implemented as middleware
 
 ## Installation
 
